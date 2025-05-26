@@ -1,0 +1,88 @@
+.page3d-root {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.page3d-canvas-wrap {
+  background: rgba(30, 40, 60, 0.92);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  padding: 24px;
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  height: 90vh;
+}
+.page3d-glass {
+  background: rgba(40, 44, 52, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 32px 28px;
+  min-width: 320px;
+  color: #fff;
+  width: 30vw;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+.page3d-btn {
+  margin: 8px 6px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 114, 255, 0.18);
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.3s;
+  display: inline-block;
+}
+.page3d-btn.active,
+.page3d-btn:active,
+.page3d-btn:focus {
+  background: linear-gradient(90deg, #0072ff 0%, #00c6ff 100%);
+  transform: scale(1.07);
+  box-shadow: 0 4px 18px rgba(0, 114, 255, 0.28);
+}
+.page3d-label {
+  display: block;
+  margin: 12px 0 6px 0;
+  font-weight: 500;
+  color: #aeeaff;
+  letter-spacing: 1px;
+}
+.page3d-input {
+  margin: 0 0 8px 0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #0072ff55;
+  background: #232526;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+.page3d-list {
+  margin: 0 0 8px 0;
+}
+.page3d-list .page3d-btn {
+  padding: 8px 18px;
+  font-size: 1rem;
+  margin: 0 6px 8px 0;
+  width: 100%;
+  text-align: left;
+}
+.page3d-small-list {
+  color: #aeeaff;
+  margin-top: 10px;
+  font-size: 13px;
+}
